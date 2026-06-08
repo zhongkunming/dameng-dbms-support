@@ -28,6 +28,18 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="MyToolWindow" factoryClass="com.github.zhongkunming.MyToolWindowFactory"
                     icon="AllIcons.Toolwindows.ToolWindowPalette"/>
+
+        <database.dbms id="DAMENG" instance="com.github.zhongkunming.sql.DamengDbms.dbms"/>
+        <database.artifactsConfig config="config/dameng-artifacts.xml"/>
+        <database.driversConfig config="config/dameng-drivers.xml"/>
+        <sql.dialect dbms="DAMENG"
+                     implementationClass="com.github.zhongkunming.sql.DamengSQLDialect"/>
+        <lang.parserDefinition language="DAMENGSQL"
+                               implementationClass="com.github.zhongkunming.sql.DamengSQLParserDefinition"/>
+        <lang.syntaxHighlighterFactory language="DAMENGSQL"
+                                       implementationClass="com.github.zhongkunming.sql.psi.DamengSQLSyntaxHighlighterFactory"/>
+        <lang.commenter language="DAMENGSQL"
+                        implementationClass="com.intellij.database.sql.common.core.psi.impl.support.SqlNestedCommenter"/>
     </extensions>
-    
+
 </idea-plugin>

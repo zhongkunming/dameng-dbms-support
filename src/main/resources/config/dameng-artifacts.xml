@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifacts>
+    <artifact id="dameng.jdbc" name="DAMNEG JDBC">
+        <version version="8.1.5.45">
+            <item type="maven" url="com.dameng:DmJdbcDriver8:8.1.5.45"/>
+            <channel id="stable"/>
+        </version>
+    </artifact>
+</artifacts>
