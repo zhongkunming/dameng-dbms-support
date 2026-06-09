@@ -33,7 +33,7 @@
         <lang.parserDefinition language="DAMENGSQL"
                                implementationClass="com.github.zhongkunming.sql.DamengSQLParserDefinition"/>
         <lang.syntaxHighlighterFactory language="DAMENGSQL"
-                                       implementationClass="com.github.zhongkunming.sql.psi.DamengSQLSyntaxHighlighterFactory"/>
+                                       implementationClass="com.github.zhongkunming.sql.DamengSQLSyntaxHighlighterFactory"/>
         <lang.commenter language="DAMENGSQL"
                         implementationClass="com.intellij.database.sql.common.core.psi.impl.support.SqlNestedCommenter"/>
     </extensions>

@@ -4,7 +4,7 @@ import com.intellij.database.Dbms;
 import com.intellij.icons.AllIcons;
 
 /**
- * @author zhongkun.meng
+ * @author zhongkunming
  */
 public class DamengDbms {
 

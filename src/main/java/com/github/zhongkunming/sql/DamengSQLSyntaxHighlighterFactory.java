@@ -1,10 +1,9 @@
-package com.github.zhongkunming.sql.psi;
+package com.github.zhongkunming.sql;
 
-import com.github.zhongkunming.sql.DamengSQLDialect;
 import com.intellij.sql.dialects.base.SqlSyntaxHighlighterFactory;
 
 /**
- * @author zhongkun.meng
+ * @author zhongkunming
  */
 public class DamengSQLSyntaxHighlighterFactory extends SqlSyntaxHighlighterFactory.Base {
 

@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Set;
 
 /**
- * @author zhongkun.meng
+ * @author zhongkunming
  */
 public class DamengSQLDialect extends SqlLanguageDialectBase {
 

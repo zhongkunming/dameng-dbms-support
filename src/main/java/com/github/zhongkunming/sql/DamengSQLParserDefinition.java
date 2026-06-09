@@ -11,7 +11,7 @@ import com.intellij.sql.psi.stubs.elementTypes.SqlFileElementType;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * @author zhongkun.meng
+ * @author zhongkunming
  */
 public class DamengSQLParserDefinition extends SqlParserDefinitionBase {
 
