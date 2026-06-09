@@ -15,7 +15,9 @@ import org.jetbrains.annotations.NotNull;
  */
 public class DamengSQLParserDefinition extends SqlParserDefinitionBase {
 
-    private final SqlParserDefinitionBase sql92ParserDefinition = new Sql92ParserDefinition();
+    private static final SqlParserDefinitionBase sql92ParserDefinition = new Sql92ParserDefinition();
+
+    private static final IFileElementType DAMENG_SQL_FILE = new SqlFileElementType("DAMENG_SQL_FILE", DamengSQLDialect.INSTANCE);
 
     @Override
     protected SqlElementFactoryBase createElementFactory() {
@@ -34,6 +36,6 @@ public class DamengSQLParserDefinition extends SqlParserDefinitionBase {
 
     @Override
     public @NotNull IFileElementType getFileNodeType() {
-        return new SqlFileElementType("DAMENG_SQL_FILE", DamengSQLDialect.INSTANCE);
+        return DAMENG_SQL_FILE;
     }
 }

@@ -24,6 +24,7 @@ public class DamengSQLDialect extends SqlLanguageDialectBase {
     protected @NotNull TokensHelper createTokensHelper() {
         // todo
         return null;
+//        return new TokensHelper(OraTokens.class, OraPlReservedKeywords.class, SqlFunctionsUtil.loadFunctionDefinition(this));
     }
 
     @Override
