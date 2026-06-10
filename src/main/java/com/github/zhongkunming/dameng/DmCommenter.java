@@ -1,4 +1,4 @@
-package com.github.zhongkunming.sql;
+package com.github.zhongkunming.dameng;
 
 import com.intellij.database.sql.common.core.psi.impl.support.SqlCommenter;
 

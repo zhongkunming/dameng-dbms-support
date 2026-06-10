@@ -1,4 +1,4 @@
-package com.github.zhongkunming.sql;
+package com.github.zhongkunming.dameng;
 
 public interface DmOptionalKeywords {
 }

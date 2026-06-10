@@ -1,4 +1,4 @@
-package com.github.zhongkunming.sql;
+package com.github.zhongkunming.dameng;
 
 import com.intellij.sql.dialects.base.SqlSyntaxHighlighterFactory;
 

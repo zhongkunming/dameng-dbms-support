@@ -25,15 +25,15 @@
     <!-- Extensions defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-        <database.dbms id="DAMENG" instance="com.github.zhongkunming.sql.DmDbms.dbms"/>
+        <database.dbms id="DAMENG" instance="com.github.zhongkunming.dameng.DmDbms.dbms"/>
         <database.artifactsConfig config="config/dameng-artifacts.xml"/>
         <database.driversConfig config="config/dameng-drivers.xml"/>
         <sql.dialect dbms="DM"
-                     implementationClass="com.github.zhongkunming.sql.DmDialect"/>
+                     implementationClass="com.github.zhongkunming.dameng.DmDialect"/>
         <lang.parserDefinition language="DM"
-                               implementationClass="com.github.zhongkunming.sql.DmParserDefinition"/>
+                               implementationClass="com.github.zhongkunming.dameng.DmParserDefinition"/>
         <lang.syntaxHighlighterFactory language="DM"
-                                       implementationClass="com.github.zhongkunming.sql.DmSyntaxHighlighterFactory"/>
+                                       implementationClass="com.github.zhongkunming.dameng.DmSyntaxHighlighterFactory"/>
         <lang.commenter language="DM"
                         implementationClass="com.intellij.database.sql.common.core.psi.impl.support.SqlNestedCommenter"/>
     </extensions>

@@ -1,14 +1,14 @@
 {
-  parserClass="com.github.zhongkunming.sql.DmParser"
+  parserClass="com.github.zhongkunming.dameng.DmParser"
   parserUtilClass="com.intellij.lang.parser.GeneratedParserUtilBase"
   extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
   psiClassPrefix="Dm"
   psiImplClassSuffix="Impl"
-  psiPackage="com.github.zhongkunming.sql.psi"
-  psiImplPackage="com.github.zhongkunming.sql.psi.impl"
-  elementTypeHolderClass="com.github.zhongkunming.sql.DmTypes"
-  elementTypeClass="com.github.zhongkunming.sql.DmElementTypes"
-  tokenTypeClass="com.github.zhongkunming.sql.DmTokenType"
+  psiPackage="com.github.zhongkunming.dameng.psi"
+  psiImplPackage="com.github.zhongkunming.dameng.psi.impl"
+  elementTypeHolderClass="com.github.zhongkunming.dameng.DmTypes"
+  elementTypeClass="com.github.zhongkunming.dameng.DmElementTypes"
+  tokenTypeClass="com.github.zhongkunming.dameng.DmTokenType"
   tokens = [
     SELECT='SELECT'
   ]
