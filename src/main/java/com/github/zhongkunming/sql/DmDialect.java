@@ -4,6 +4,7 @@ import com.intellij.database.Dbms;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.sql.dialects.base.SqlLanguageDialectBase;
 import com.intellij.sql.dialects.base.TokensHelper;
+import com.intellij.sql.dialects.functions.SqlFunctionsUtil;
 import com.intellij.sql.dialects.oracle.OraDialect;
 import org.jetbrains.annotations.NotNull;
 
@@ -12,24 +13,22 @@ import java.util.Set;
 /**
  * @author zhongkunming
  */
-public class DamengSQLDialect extends SqlLanguageDialectBase {
+public class DmDialect extends SqlLanguageDialectBase {
 
-    public static final DamengSQLDialect INSTANCE = new DamengSQLDialect();
+    public static final DmDialect INSTANCE = new DmDialect();
 
-    protected DamengSQLDialect() {
-        super("DAMENGSQL");
+    protected DmDialect() {
+        super("DM");
     }
 
     @Override
     protected @NotNull TokensHelper createTokensHelper() {
-        // todo
-        return null;
-//        return new TokensHelper(OraTokens.class, OraPlReservedKeywords.class, SqlFunctionsUtil.loadFunctionDefinition(this));
+        return new TokensHelper(DmTokens.class, DmReservedKeywords.class, SqlFunctionsUtil.loadFunctionDefinition(this));
     }
 
     @Override
     public @NotNull Dbms getDbms() {
-        return DamengDbms.dbms;
+        return DmDbms.dbms;
     }
 
     @Override

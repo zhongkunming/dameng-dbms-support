@@ -13,11 +13,11 @@ import org.jetbrains.annotations.NotNull;
 /**
  * @author zhongkunming
  */
-public class DamengSQLParserDefinition extends SqlParserDefinitionBase {
+public class DmParserDefinition extends SqlParserDefinitionBase {
 
     private static final SqlParserDefinitionBase sql92ParserDefinition = new Sql92ParserDefinition();
 
-    private static final IFileElementType DAMENG_SQL_FILE = new SqlFileElementType("DAMENG_SQL_FILE", DamengSQLDialect.INSTANCE);
+    private static final IFileElementType DAMENG_SQL_FILE = new SqlFileElementType("DAMENG_SQL_FILE", DmDialect.INSTANCE);
 
     @Override
     protected SqlElementFactoryBase createElementFactory() {

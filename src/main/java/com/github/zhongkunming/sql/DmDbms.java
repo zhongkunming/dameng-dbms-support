@@ -6,7 +6,7 @@ import com.intellij.icons.AllIcons;
 /**
  * @author zhongkunming
  */
-public class DamengDbms {
+public class DmDbms {
 
 //    public static final Dbms dbms = Dbms.create("DAMENG", "DAMENG",
 //            () -> IconLoader.getIcon("/icons/dameng.svg", DamengDbms.class), "dameng|dm|DAMENG|DM");

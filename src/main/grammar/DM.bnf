@@ -1,0 +1,17 @@
+{
+  parserClass="com.github.zhongkunming.sql.DmParser"
+  parserUtilClass="com.intellij.lang.parser.GeneratedParserUtilBase"
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+  psiClassPrefix="Dm"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.github.zhongkunming.sql.psi"
+  psiImplPackage="com.github.zhongkunming.sql.psi.impl"
+  elementTypeHolderClass="com.github.zhongkunming.sql.DmTypes"
+  elementTypeClass="com.github.zhongkunming.sql.DmElementTypes"
+  tokenTypeClass="com.github.zhongkunming.sql.DmTokenType"
+  tokens = [
+    SELECT='SELECT'
+  ]
+}
+
+dualStatement ::= DUAL
